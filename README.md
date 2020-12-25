@@ -26,7 +26,7 @@ Project "Делай JOBS" - a web application for finding vacancies, as well as 
 - Add Job
 ![Main](screenshots/AddJob.png)
 - Add Worker
-![Main](screenshots/AddWorker.png)
+![Main](screenshots/addWorker.png)
 - Login page
 ![Main](screenshots/Login.png)
 - Register page
