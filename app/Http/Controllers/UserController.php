@@ -22,4 +22,21 @@ class UserController extends Controller {
     	return redirect()->route('home');
     }
 
+    public function login(Request $req){
+    	$user = new User;
+    	$success = false;
+    	if ($user -> where('email', '=', $req->input('email'))) {
+    		if ($user -> where('password', '=', $req->input('password'))) {
+    			$success = true;
+    			return redirect()->route('home', $success, $user);
+    		}
+    	}
+    	return redirect()->route('home',$success);
+    }
+
+     public function detailsProfile($id){
+    	$user = new User;
+    	return view('profile', ['data'=> $user -> find($id)]);
+    }
+
 }

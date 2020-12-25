@@ -15,6 +15,11 @@ class WorkersController extends Controller
     	return view('addWorker');
     }
 
+    public function details($id){
+    	$worker = new Workers;
+    	return view('detailsWorker',['data'=> $worker->find($id)]);
+    }
+
     public function submit(Request $req){
     	$worker = new Workers;
     	$worker -> fullName = $req->input('fullName');

@@ -18,7 +18,7 @@
 					<button type="submit" class="btn text-white text-center form-control" style="border: 2px solid white">Найти вакансию</button>
 				</div>
 				<div class="form-group mx-auto" style="max-width: 50%">
-					<button class="btn text-white text-center form-control mx-auto" style="border: 2px solid white;"><a href="{{  route('add-job')  }}" class="text-white" style="text-decoration: none;">Разместить вакансию</a></button>
+					<a href="{{  route('add-job')  }}" role="button" class="btn text-white text-center form-control mx-auto" style="border: 2px solid white;">Разместить вакансию</a>
 				</div>
 			</form>
 		</div>
@@ -38,7 +38,7 @@
 					<button type="submit" class="btn text-white text-center form-control" style="border: 2px solid white">Найти сотрудника</button>
 				</div>
 				<div class="form-group mx-auto" style="max-width: 50%">
-					<button class="btn text-white text-center form-control mx-auto" style="border: 2px solid white;"><a href="{{  route('add-worker')  }}" class="text-white" style="text-decoration: none;">Разместить резюме</a></button>
+					<a href="{{  route('add-worker')  }}" role="button" class="btn text-white text-center form-control mx-auto" style="border: 2px solid white;">Разместить резюме</a>
 				</div>
 			</form>
 		</div>

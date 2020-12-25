@@ -15,6 +15,11 @@ class JobsController extends Controller
     	return view('addJob');
     }
 
+    public function details($id){
+    	$job = new Jobs;
+    	return view('detailsJob',['data'=> $job -> find($id)]);
+    }
+
     public function submit(Request $req){
     	$job = new Jobs;
     	$job -> name = $req->input('name');
@@ -28,6 +33,6 @@ class JobsController extends Controller
 
     public function findJobsByName(Request $req){
     	$job = new Jobs;
-    	return view('jobs',['data'=> $job -> where('name', '=', $req->input('findJob'))->get()]);
+    	return view('jobs',['data'=> $job -> where('name', 'LIKE', '%'.$req->input('findJob').'%')->get()]);
     }
 }

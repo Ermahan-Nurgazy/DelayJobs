@@ -17,9 +17,19 @@ Route::get('/', 'App\Http\Controllers\MainController@home')->name('home');
 
 Route::get('/about', 'App\Http\Controllers\MainController@about')->name('about');
 
-Route::get('/register', 'App\Http\Controllers\UserController@register')->name('register');
+Route::get('/profile', 'App\Http\Controllers\MainController@profile')->name('profile');
 
-Route::post('/register/auth', 'App\Http\Controllers\UserController@submit')->name('register-form');
+Route::get('/detailsProfile/{id}', 'App\Http\Controllers\UserController@detailsProfile')->name('detailsProfile');
+
+Route::get('/detailsJob/{id}', 'App\Http\Controllers\JobsController@details')->name('details-job');
+
+Route::get('/detailsWorker/{id}', 'App\Http\Controllers\WorkersController@details')->name('details-worker');
+
+// Route::get('/register', 'App\Http\Controllers\UserController@register')->name('register');
+
+// Route::post('/register/auth', 'App\Http\Controllers\UserController@submit')->name('register-form');
+
+// Route::post('/login', 'App\Http\Controllers\UserController@login')->name('login');
 
 Route::get('/jobs', 'App\Http\Controllers\JobsController@jobs')->name('find-job');
 
@@ -36,3 +46,7 @@ Route::get('/workers/add', 'App\Http\Controllers\WorkersController@addWorker')->
 Route::post('/workers/add/submit', 'App\Http\Controllers\WorkersController@submit')->name('add-worker-submit');
 
 Route::post('/workers/find', 'App\Http\Controllers\WorkersController@findWorkersByName')->name('find-worker-by-name');
+
+Auth::routes(['verfiy' => true]);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

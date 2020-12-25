@@ -13,4 +13,10 @@ class MainController extends Controller
     public function about(){
     	return view('about');
     }
+
+    public function profile(){
+    	return view('profile');		
+    }
+
+   
 }
