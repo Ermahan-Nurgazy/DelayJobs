@@ -12,10 +12,30 @@ Project "Делай JOBS" - a web application for finding vacancies, as well as 
 [Design of the project](https://www.figma.com/file/YFq56G3WJYpHIkATkzh3tmp9/Delay-Jobs?node-id=0%3A1)
 
 ## Pages.
-- [Main page](http://timetable.com/)
-- [About page](http://timetable.com/about)
-- [Registration page](http://timetable.com/register)
-- [Search jobs page](http://timetable.com/jobs)
-- [Search workers page](http://timetable.com/workers)
-- [Add job page](http://timetable.com/jobs/add)
-- [Add worker page](http://timetable.com/workers/add)
+- Main page
+![Main](screenshots/Main.png)
+![Main](screenshots/Main2.png)
+- Search Jobs
+![Main](screenshots/SearchJobs.png)
+- Search Workers
+![Main](screenshots/SearchWorkers.png)
+- Details Job
+![Main](screenshots/DetailsJob.png)
+- Details Worker
+![Main](screenshots/DetailsWorker.png)
+- Add Job
+![Main](screenshots/AddJob.png)
+- Add Worker
+![Main](screenshots/AddWorker.png)
+- Login page
+![Main](screenshots/Login.png)
+- Register page
+![Main](screenshots/Register.png)
+- Forget Password
+![Main](screenshots/ForgetPassword.png)
+- Update Password
+![Main](screenshots/UpdatePassword.png)
+- After Authorization
+![Main](screenshots/AfterAuthorizatio.png)
+- Profile page
+![Main](screenshots/Profile.png)
